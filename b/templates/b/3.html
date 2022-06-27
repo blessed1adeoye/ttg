@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<div class="row main-content">
+  <div class="large-12 columns" style="background:cadetblue;">
+
+          <h3 style="color:#fff;"><b> MESSAGES</b></h3>
+          {% for x in all_sms %}
+          <div class="large-6 columns">
+              <img src="/media/{{x.img_pst}}" alt="{{x.Theme}}" class="card-img-top">
+                  <h6><b>{{x.Theme}} - {{x.Theme_reference}}</b></h6>
+                  <h3 style="color:gold;" class="icon-calendar" ><b>  {{x.d}}{{x.sup}} of {{x.m}} {{x.y}}</b></h3>
+                  <h5>{{x.bible}}</h5>
+
+                  <p align="justify">{{ x.message | slice:":200" |safe  }}</p>
+                  <button><a href="{% url 'b:detail' x.id %}">READ MORE</a></button>
+          </div>
+          {% endfor %}
+      <br>
+  </div>
+</div>
+
+
+{% endblock content %}

@@ -1,0 +1,39 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<div class="row main-content">
+  <div class="large-12 columns" style="background-color:cadetblue;">
+
+      <div class="large-8 columns">
+          <img src="/media/{{sms.img}}" alt="{{x.title}}" class="card-img-top">
+          <div class="card-body">
+              <h6><b>{{sms.Theme}}</b> - {{sms.Theme_reference}}</h6>
+                <hr>
+              <p>{{sms.message | safe}}</p>
+          </div>
+      </div>
+      <br><br><br>
+<!--      <div class="large-4 columns">-->
+<!--        <div class="large-12 columns">-->
+<!--            <h3 style="color:#fff;"><b>From this Category</b></h3>-->
+
+<!--            <div class="card mb-3 shadow">-->
+<!--                <img src="/media/{{sms.img}}" alt="{{sms.Theme}}"> BY: <img src="/media/{{sms.img_pst}}" alt="{{sms.Theme}}">-->
+
+<!--                <div>-->
+<!--                    <h5 class="card-title">{{x.title}}</h5>-->
+
+<!--                    <hr>-->
+
+<!--                </div>-->
+
+<!--            </div>-->
+<!--        </div>-->
+
+<!--      </div>-->
+
+  </div>
+</div>
+
+
+{% endblock content %}

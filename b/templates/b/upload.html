@@ -1,0 +1,63 @@
+{% extends 'base.html' %}
+
+
+{% load static %}
+{% block content %}
+
+<div class="row main-content">
+<!-- Main Content -->
+<div class="large-12 columns">
+ <div class="row">
+  <!-- Row -->
+     <div class="large-8 columns"> <br/>
+        <table class="table">
+          <thead>
+            <tr>
+                <th><h1>VIDEOS</h1></th>
+            </tr>
+          </thead>
+          <tbody>
+            {% for video in videos %}
+
+                <tr>
+                    <td>
+                       <button>
+                           <a href="{{ video.videofile.url }}" target="blank">
+                            <h6>{{ video.name }}</h6>
+                           </a>
+                       </button>
+
+                    </td>
+                </tr>
+            {% endfor %}
+          </tbody>
+        </table>
+     </div>
+
+    <br/>
+    <div class="large-4 columns">
+      <div class="clearfix"></div>
+        <!-- End Panel -->
+
+
+        {% block unit %} {% include 'b/unit.html' %}  {% endblock unit %}
+
+
+    </div>
+
+</div>
+
+
+ <br>
+
+<br clear="all">
+<br>
+  <!-- End Special Row -->
+<meta name="viewport" content="width=device-width" />
+<title>| STUDIO Winners Chapel International, Total Garden Ibadan | winnerschapeltotalgarden.org</title>
+    {% endblock content %}
+
+
+
+
+

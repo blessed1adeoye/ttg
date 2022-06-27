@@ -1,0 +1,142 @@
+{% load static %}
+
+{% block html %}
+<!DOCTYPE html>
+<html dir="ltr" lang="en">
+{% block head %}
+   <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- Tell the browser to be responsive to screen width -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <!-- Favicon icon -->
+    <link rel="icon" type="image/png" sizes="16x16" href="{%  static 'dash/images/favicon.png' %}">
+    <title> OMOBUWA BLESSED ADEOYE DATA SCIENCE </title>
+                <link href="{% static 'dash/css/bootstrap.min.css' %}" rel="stylesheet"/>
+            <link href="{% static 'dash/css/animation.css' %}" rel="stylesheet"/>
+            <link href="{% static 'dash/css/asColorPicker.min.css' %}" rel="stylesheet"/>
+            <link href="{% static 'dash/css/fullcalendar.min.css' %}" rel="stylesheet"/>
+            <link href="{% static 'dash/css/calendar.css' %}" rel="stylesheet"/>
+            <link href="{% static 'dash/css/dataTables.bootstrap4.min.css' %}" rel="stylesheet"/>
+            <link href="{% static 'dash/css/fontawesome-all.min.css' %}" rel="stylesheet"/>
+            <link href="{% static 'dash/css/jquery.gritter.css' %}" rel="stylesheet"/>
+            <link href="{% static 'dash/css/jquery.minicolors.css' %}" rel="stylesheet"/>
+            <link href="{% static 'dash/css/jquery.steps.css' %}" rel="stylesheet"/>
+            <link href="{% static 'dash/css/magnific-popup.css' %}" rel="stylesheet"/>
+            <link href="{% static 'dash/css/materialdesignicons.min.css' %}" rel="stylesheet"/>
+            <link href="{% static 'dash/css/multicheck.css' %}" rel="stylesheet"/>
+            <link href="{% static 'dash/css/perfect-scrollbar.min.css' %}" rel="stylesheet"/>
+            <link href="{% static 'dash/css/quill.core.css' %}" rel="stylesheet"/>
+            <link href="{% static 'dash/css/quill.snow.css' %}" rel="stylesheet"/>
+            <link href="{% static 'dash/css/select2.min.css' %}" rel="stylesheet"/>
+            <link href="{% static 'dash/css/steps.css' %}" rel="stylesheet"/>
+            <link href="{% static 'dash/css/themify-icons.css' %}" rel="stylesheet"/>
+            <link href="{% static 'dash/css/toastr.min.css' %}" rel="stylesheet"/>
+            <link href="{% static 'dash/css/weather-icons.css' %}" rel="stylesheet"/>
+            <link href="{% static 'dash/css/weather-icons.min.css' %}" rel="stylesheet"/>
+            <link href="{% static 'dash/css/float-chart.css' %}" rel="stylesheet"/>
+            <link href="{% static 'dash/css/style.min.css' %}" rel="stylesheet"/>
+            <link href="{% static 'dash/css/custom.css' %}" rel="stylesheet"/>
+    <!-- HTML5 Shim and Respond.js' %} IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js' %} doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+<!--    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js' %}"></script>-->
+<!--    <script src="https://oss.maxcdn.com/libs/respond.js' %}/1.4.2/respond.min.js' %}"></script>-->
+<![endif]-->
+   {% block extra_style %}{% endblock extra_style %}
+</head>
+{% endblock head %}
+
+   {% block body %}
+
+       <body>
+    <!-- ============================================================== -->
+    <!-- Preloader - style you can find in spinners.css' %} -->
+    <!-- ============================================================== -->
+    <div class="preloader">
+        <div class="lds-ripple">
+            <div class="lds-pos"></div>
+            <div class="lds-pos"></div>
+        </div>
+    </div>
+    <!-- ============================================================== -->
+    <!-- Main wrapper - style you can find in pages.scss -->
+    <!-- ============================================================== -->
+    <div id="main-wrapper">
+         {% include 'includes/header.html' %}
+         {% include 'includes/sidebar.html' %}
+          <div class="page-wrapper">
+           {% block content %}{% endblock content %}
+           {% include 'includes/footer.html' %}
+         </div>
+    </div>
+
+    {% block script %}
+
+        <script src="{% static 'dash/js/jquery.min.js' %}"></script>
+        <script src="{% static 'dash/js/popper.min.js' %}"></script>
+        <script src="{% static 'dash/js/bootstrap.min.js' %}"></script>
+
+        <script src="{% static 'dash/js/perfect-scrollbar.jquery.min.js' %}"></script>
+        <script src="{% static 'dash/js/sparkline.js' %}"></script>
+        <script src="{% static 'dash/js/waves.js' %}"></script>
+        <script src="{% static 'dash/js/sidebarmenu.js' %}"></script>
+        <script src="{% static 'dash/js/custom.min.js' %}"></script>
+
+        <script src="{% static 'dash/js/excanvas.js' %}"></script>
+        <script src="{% static 'dash/js/jquery.flot.js' %}"></script>
+        <script src="{% static 'dash/js/jquery.flot.pie.js' %}"></script>
+        <script src="{% static 'dash/js/jquery.flot.time.js' %}"></script>
+        <script src="{% static 'dash/js/jquery.flot.time.js' %}"></script>
+        <script src="{% static 'dash/js/jquery.flot.stack.js' %}"></script>
+        <script src="{% static 'dash/js/jquery.flot.crosshair.js' %}"></script>
+        <script src="{% static 'dash/js/jquery.flot.tooltip.min.js' %}"></script>
+        <script src="{% static 'dash/js/moment.min.js' %}"></script>
+        <script src="{% static 'dash/js/chart-page-init.js' %}"></script>
+        <script src="{% static 'dash/js/app-style-switcher.js' %}"></script>
+        <script src="{% static 'dash/js/bootstrap-datepicker.min.js' %}"></script>
+        <script src="{% static 'dash/js/datatable-checkbox-init.js' %}"></script>
+        <script src="{% static 'dash/js/datatables.min.js' %}"></script>
+        <script src="{% static 'dash/js/jquery.dataTables.min.js' %}"></script>
+        <script src="{% static 'dash/js/dataTables.bootstrap4.min.js' %}"></script>
+        <script src="{% static 'dash/js/jquery.charts-sparkline.js' %}"></script>
+        <script src="{% static 'dash/js/jquery.magnific-popup.min.js' %}"></script>
+        <script src="{% static 'dash/js/jquery-asColor.min.js' %}"></script>
+        <script src="{% static 'dash/js/jquery-asGradient.js' %}"></script>
+        <script src="{% static 'dash/js/jquery-asColorPicker.min.js' %}"></script>
+        <script src="{% static 'dash/js/jquery.minicolors.min.js' %}"></script>
+        <script src="{% static 'dash/js/jquery.multicheck.js' %}"></script>
+        <script src="{% static 'dash/js/jquery.validate.min.js' %}"></script>
+        <script src="{% static 'dash/js/toastr.min.js' %}"></script>
+<!--        <script src="{% static 'dash/js/select2.full.min.js' %}"></script>-->
+        <script src="{% static 'dash/js/select2.min.js' %}"></script>
+        <script src="{% static 'dash/js/jquery.inputmask.bundle.min.js' %}"></script>
+        <script src="{% static 'dash/js/quill.min.js' %}"></script>
+        <script src="{% static 'dash/js/mask.init.js' %}"></script>
+        <script src="{% static 'dash/js/meg.init.js' %}"></script>
+        <script src="{% static 'dash/js/cal-init.js' %}"></script>
+
+
+        <script>
+            $(document).ready(function () {
+                $('#example').DataTable();
+            });
+        </script>
+        <script>
+            $(document).ready(function () {
+                $('#zero_config').DataTable();
+            });
+        </script>
+
+    {% block extra_script %}{% endblock extra_script %}
+
+
+    {% endblock script %}
+
+    </body>
+   {% endblock body %}
+
+
+{% endblock html %}

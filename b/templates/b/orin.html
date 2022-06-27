@@ -1,0 +1,38 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+
+<title> MUSIC MINISTRY | Winners Chapel International - Total Garden | winnerschapeltg.org</title>
+
+
+<div class="row">
+  <div class="large-12 columns">
+    <table>
+      <thead>
+        <tr>
+          <th width="455">Available Resources</th>
+          <th width="152"></th>
+          <th width="182"></th>
+          <th width="199">OPTION Button</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr class="closealldiv" id="showing0">
+          {% for x in orin %}
+          <td style="padding-left:25px;"><b>{{x.title}}</td>
+          <td style="padding-left:25px;"> </td>
+          <td style="padding-left:25px;"></td>
+          <td style="padding-left:25px;"><a target="_blank" href="{{ x.song.url }}" class="button success">OPEN</a></td>
+          {% endfor %}
+        </tr>
+      </tbody>
+    </table>
+<!--    <div id="plm" class="dynamic_pagination">Showing SONGS <span id="startofproduct_span">1</span>-<span id="lastofproduct_span">10</span> of <span id="totalnumberofproduct_span">25</span> <a id="pervious_button" style="cursor:pointer; display: none;" onclick="return next_pervious()">[Previous] </a> <a id="next_button" style="cursor:pointer;" onclick="return previous_next()">[Next]</a></div>-->
+<!--    <input type="hidden" name="startofproduct" id="startofproduct" value="1"/>-->
+<!--    <input type="hidden" name="lastofproduct" id="lastofproduct" value="10"/>-->
+<!--    <input type="hidden" name="totalnumberofproduct" id="totalnumberofproduct" value="25"/>-->
+<!--  </div>-->
+</div>
+</div>
+{% endblock content %}

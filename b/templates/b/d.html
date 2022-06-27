@@ -1,0 +1,409 @@
+{% extends 'base.html' %}
+
+
+{% load static %}
+{% block content %}
+<title>WELCOME| Winners Chapel International - Total Garden | winnerschapeltg.org</title>
+<!-- To move inline styles to css file/block, please specify a class name for each element. -->
+<div id="slider2_container" style="position: relative; top: 0px; left: 0px; width: 1260px;
+        height: 450px;">
+
+
+
+<!-- Loading Screen -->
+<div u="loading" style="position: absolute; top: 0px; left: 0px;">
+  <div style="filter: alpha(opacity=70); opacity:0.7; position: absolute; display: block;
+                background-color: #000; top: 0px; left: 0px;width: 100%;height:100%;"> </div>
+  <div style="position: absolute; display: block; background: url(static/img/loading.gif) no-repeat center center;
+                top: 0px; left: 0px;width: 100%;height:100%;"> </div>
+</div>
+
+<!-- Slides Container -->
+<div u="slides" style="cursor: move; position: absolute; left: 0px; top: 0px; width: 1260px; height: 450px; overflow: hidden;">
+
+
+
+{% for x in img %}
+    <div> <a u=image href="#"><img  src="{{ x.img.url }}"/></a> </div>
+{% endfor %}
+
+
+<!-- bullet navigator container -->
+<div u="navigator" class="jssorb01" style="bottom: 11px; right: 10px; width: 259px; height: 12px;">
+
+  <!-- bullet navigator item prototype -->
+  <div u="prototype" style="POSITION: absolute; WIDTH: 12px; HEIGHT: 12px;"></div>
+</div>
+<!--#endregion Bullet Navigator Skin End -->
+
+<!--#region Arrow Navigator Skin Begin -->
+<!-- Help: http://www.jssor.com/development/slider-with-arrow-navigator-jquery.html -->
+<style>
+            /* jssor slider arrow navigator skin 05 css */
+            /*
+            .jssora05l                  (normal)
+            .jssora05r                  (normal)
+            .jssora05l:hover            (normal mouseover)
+            .jssora05r:hover            (normal mouseover)
+            .jssora05l.jssora05ldn      (mousedown)
+            .jssora05r.jssora05rdn      (mousedown)
+            */
+            .jssora05l, .jssora05r {
+                display: block;
+                position: absolute;
+                /* size of arrow element */
+                width: 40px;
+                height: 40px;
+                cursor: pointer;
+                background: url(static/img/a11.png) no-repeat;
+                overflow: hidden;
+            }
+            .jssora05l { background-position: -10px -40px; }
+            .jssora05r { background-position: -70px -40px; }
+            .jssora05l:hover { background-position: -130px -40px; }
+            .jssora05r:hover { background-position: -190px -40px; }
+            .jssora05l.jssora05ldn { background-position: -250px -40px; }
+            .jssora05r.jssora05rdn { background-position: -310px -40px; }
+</style>
+<!-- Arrow Left -->
+<span u="arrowleft" class="jssora05l" style="width: 40px; height: 50px; top: 163px; left: 8px;"> </span>
+<!-- Arrow Right -->
+<span u="arrowright" class="jssora05r" style="width: 40px; height: 50px; top: 163px; right: 8px"> </span>
+
+<!-- Trigger -->
+<script>
+            jssor_slider2_starter('slider2_container');
+</script>
+
+</div>
+
+<div class="flex-video2">
+</div>
+
+</div>
+
+  <!-- End Main Slider -->
+<div class="row">
+<div class="large-12 columns">
+<div class="large-10 columns small-centered text-center">
+</div>
+</div><!-- End Special Row -->
+<!-- <hr />-->
+<style>
+@font-face {
+	font-family: 'gothic';
+	src: url('static/fonts/gothic.eot');
+	src: local('gothic'), url('static/fonts/gothic.woff') format('woff'), url('fonts/gothic.ttf') format('truetype');
+}
+/* use this class to attach this font to any element i.e. <p class="fontsforweb_fontid_9785">Text with this font applied</p> */
+.fontsforweb_fontid_9785 {
+	font-family: 'gothic' !important;
+	text-align: justify;
+    font-size: 12px;
+    margin-top: 0px;
+    padding: 0 30px;
+}
+
+</style>
+
+
+
+<div  class="row">
+<!-- Special Row -->
+<div class="large-5 columns"><!-- Column 5 -->
+
+ <div style="padding-top:1px;"><img src="{% static 'img/banners/wofbi-btn.jpg' %}"  usemap="#Map4" />
+   <map name="Map4">
+     <area shape="rect" coords="2,2,486,129" href="#" target="_self" />
+   </map>
+ </div>
+  <br/>
+   <div style="padding-top:1px;"><img src="{% static 'img/banners/invitation.png' %}" alt="Invite a Friend" usemap="#Map" />
+    <map name="Map">
+      <area shape="rect" coords="3,-3,490,119" href="{% url 'b:invite' %}" target="_parent" alt="INVITE A FRIEND">
+    </map>
+  </div><br/>
+
+  <div><img src="{% static 'img/banners/domi-btn.jpg' %}" usemap="#Map2" />
+    <map name="Map2">
+      <area shape="rect" coords="5,4,486,121" href="#" target="_parent" alt="DOMI MEDIA">
+    </map>
+  </div>
+  <br/>
+
+<div><img src="{% static 'img/banners/sub-connect-btn.png' %}" usemap="#Map3" />
+
+        <br/>  <br/>
+<a href="#" data-reveal-id="videoModal" class="radius button success medium"><span class="icon-chevron-right"></span><b> I AM WORKING IN POWER BY THE HOLY GHOST </b></a>
+
+        </div>
+
+     <div class="clearfix"></div>
+   <div class="large-12 columns">
+
+       <img src="{% static 'img/f.jpg' %}" alt="">
+
+ </div>
+</div>
+<!-- End Column 5 -->
+<div class="large-7 columns"><!-- Column 7 -->
+  <article class="post">
+    <h2 align="center" style="font-weight:bolder; color:#000000;">Winners Chapel International, </h2>
+    <!--<p align="justify" class="fontsforweb_fontid_9785" style="font-size: 14px; padding-left:30px;font-family:century gothic;"><b style="font-size:20px;">Exceeding Grace Greetings!</b></p>-->
+
+    <p align="justify" class="fontsforweb_fontid_9785" style="font-size: 14px; padding-left:30px;font-family:century gothic;"><b style="font-size:22px;"><!--Our Cases are Different!-->Turnaround Greetings in Jesus Name!</b><br/>
+     It is my delightful privilege to welcome you to the Winners Chapel International Total Garden website. <br/><br/>
+      I believe that your visit today is not coincidental but divinely orchestrated to effect the change and turnaround you are due for. </p>
+    <p align="justify" class="post_text" style="font-family:Century Gothic; font-size: 14px; padding-left:30px;">Winners Chapel International Total Garden is a Word based church, where the issue of faith is being stressed and cannot be over emphasized. We teach people the core values of Christianity and how to activate their faith for exploits in life.
+    </p>
+    <p align="justify" class="post_text" style="font-family:Century Gothic; font-size: 14px; padding-left:30px;">Here at Winners Chapel International Total Garden, you will be exposed to the revelational knowledge of the Word of God, the refreshing of His presence and empowerment for a life of fulfillment and of Glory.</p>
+    <p align="justify" class="post_text" style="font-family:Century Gothic; font-size: 14px; padding-left:30px;">On behalf of the membership and leadership of this great assembly, it’s my utmost pleasure to invite you specially to join this winning team, as you worship with us at our current location:<br/><br/>
+    <b><span><i class="icon-home"></i></span> Winners Chapel International,<br/>
+      KM9 Queen Elizabeth Way Total Garden, <br/>
+      Ibadan, Oyo State
+<br/>
+       Nigeria. </b><br/>
+      <br/>
+      <b><i class="icon-spinner"></i> Sundays</b>:  7:00am  (1<sup>st</sup> Service) and 9:00am (2<sup>nd</sup> Service).<br/>
+      <b><i class="icon-spinner"></i> Wednesdays</b>: 5:00pm – 7:00pm <br/>
+      <b><i class="icon-spinner"></i> Covenant Hour Of Prayer</b>: 6:00am - 7:00am <br/>
+     <br/> Once again, thank you for visiting our website, please feel free to navigate around and much more,
+        I would like to meet and fellowship with you in person. <br/>
+      It is your  season of  <strong>"Turnaround Encounters"</strong>  indeed!. <b>God Bless You!</b> </p>
+    <p align="justify" class="post_text" style="font-family:Century Gothic; font-size: 20px; padding-left:30px;"><b>Moses Olajide</b><br/>
+      Resident Pastor
+      <br/>
+      <i style="font-family:times new roman;">residentpastor@lfctotalgarden.org </i></p>
+  </article>
+</div>
+<!-- End Column 7 -->
+
+<script src="{% static 'js/foundation.min.js' %}"></script>
+<script>
+    $(document).foundation();
+  </script>
+
+<!-- Smallipop JS - Tooltips -->
+<script type="text/javascript" src="{% static 'plugins/smallipop/lib/contrib/prettify.js' %}"></script>
+<script type="text/javascript" src="{% static 'plugins/smallipop/lib/jquery.smallipop.js' %}"></script>
+<script type="text/javascript" src="{% static 'plugins/smallipop/lib/smallipop.calls.js' %}"></script>
+<div id="videoModal" class="reveal-modal medium" style="width:670px; height:560px;";>
+
+
+
+  <div class="flex-video widescreen vimeo">
+
+  </div>
+  <a class="close-reveal-modal">&#215;</a> </div>
+
+<div id="videoModal2" class="reveal-modal medium">
+  <h2 align="center">I AM WORKING IN POWER by the HOLY GHOST </h2>
+    <div class="flex-video widescreen vimeo">
+<iframe src="#$" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+
+
+ </div>
+  <a class="close-reveal-modal">&#215;</a>
+</div>
+<!-- End Special Row -->
+<hr />
+<style>
+.rec-book p { color:#000; }
+</style>
+
+
+</div>
+
+<div class="row aniema"> <h4 align="center" style="font-weight:bolder;"> The 12 Pillars of Our Commission</h4></div>
+<br/>
+            <div class="list_carousel"><!-- Carousel -->
+
+              <!-- Carousel Navigation -->
+              <a id="prev2" class="prev" href="#"><i class="icon-arrow-left"></i></a>
+              <a id="next2" class="next" href="#"><i class="icon-arrow-right"></i></a>
+
+
+              <div class="clearfix"></div>
+
+              <ul id="carousel-type1">
+
+                <li>
+
+                  <div class="view view-three">
+                    <img src="{% static 'img//pillars/praise.png' %}"/>
+                    <div class="mask">
+						<h3>PRAISE</h3>
+						<p class="fontsforweb_fontid_9785" style="font-size: 14px;">...let everything that has breath praise the Lord</p>
+						<a class="button portfolio btn-icon" href="#"><i class="icon-link icon-large"></i></a>
+                    </div>
+                  </div>
+
+                </li>
+
+                <li>
+
+                  <div class="view view-three">
+                    <img src="{% static 'img/pillars/wisdom.png' %}"/>
+                    <div class="mask">
+						<h3>WISDOM</h3>
+						<p class="fontsforweb_fontid_9785" style="font-size: 14px;">...the God kind of Wisdom (Pro. 4:7)</p>
+						<a class="button portfolio btn-icon" href="#"><i class="icon-link icon-large"></i></a>
+                     </div>
+                    </div>
+
+                </li>
+
+                <li>
+
+                  <div class="view view-three">
+                    <img src="{% static 'img/pillars/prayer.png' %}"/>
+                    <div class="mask">
+						<h3>PRAYER</h3>
+						<p class="fontsforweb_fontid_9785" style="font-size: 14px;">
+                            ...an invitation to meet with God (Luke 18:1)
+                        </p>
+						<a class="button portfolio btn-icon" href="#"><i class="icon-link icon-large"></i></a>
+                    </div>
+                  </div>
+
+                </li>
+
+                <li>
+
+                  <div class="view view-three">
+                    <img src="{% static 'img/pillars/holyspirit.png' %}"/>
+                    <div class="mask">
+						<h3>THE HOLY SPIRIT</h3>
+						<p class="fontsforweb_fontid_9785" style="font-size: 14px;">
+                            ...He will guide you into all truth:
+                        </p>
+						<a class="button portfolio btn-icon" href="#"><i class="icon-link icon-large"></i></a>
+                    </div>
+                  </div>
+
+                </li>
+
+                <li>
+
+                  <div class="view view-three">
+                    <img src="{% static 'img/pillars/faith.png' %}"/>
+                    <div class="mask">
+						<h3>FAITH</h3>
+						<p class="fontsforweb_fontid_9785" style="font-size: 14px;">
+                            But without faith it is impossible to please God (Hebrews 11:6)
+                        </p>
+						<a class="button portfolio btn-icon" href="#"><i class="icon-link icon-large"></i></a>
+                    </div>
+                  </div>
+
+                </li>
+
+                 <li>
+
+                  <div class="view view-three">
+                    <img src="{% static 'img/pillars/consecration.png' %}"/>
+                    <div class="mask">
+						<h3>CONSECRATION</h3>
+						<p class="fontsforweb_fontid_9785" style="font-size: 14px;">
+                            ...the pure in heart shall see God (Matthew 5:8)
+                        </p>
+						<a class="button portfolio btn-icon" href="#"><i class="icon-link icon-large"></i></a>
+                    </div>
+                  </div>
+
+                </li>
+
+                 <li>
+
+                  <div class="view view-three">
+                    <img src="{% static 'img/pillars/theword.png' %}"/>
+                    <div class="mask">
+						<h3>THE WORD</h3>
+						<p class="fontsforweb_fontid_9785" style="font-size: 14px;">
+                            God's Word: Living and Active (Heb.4:12)
+                        </p>
+						<a class="button portfolio btn-icon" href="#"><i class="icon-link icon-large"></i></a>
+                    </div>
+                  </div>
+
+                </li>
+
+                 <li>
+
+                  <div class="view view-three">
+                    <img src="{% static 'img/pillars/supernatural.png' %}"/>
+                    <div class="mask">
+						<h3>THE SUPERNATURAL</h3>
+						<p class="fontsforweb_fontid_9785" style="font-size: 14px;">
+                            Unexplainable, Miraculous, Exceeding the Ordinary...
+                        </p>
+						<a class="button portfolio btn-icon" href="#"><i class="icon-link icon-large"></i></a>
+                    </div>
+                  </div>
+
+                </li>
+
+                 <li>
+
+                  <div class="view view-three">
+                    <img src="{% static 'img/pillars/prosperity.png' %}"/>
+                    <div class="mask">
+						<h3>PROSPERITY</h3>
+						<p class="fontsforweb_fontid_9785" style="font-size: 14px;">
+                            ...that thou mayest prosper and be in health (3 John 1:2)
+                        </p>
+						<a class="button portfolio btn-icon" href="#"><i class="icon-link icon-large"></i></a>
+                    </div>
+                  </div>
+
+                </li>
+
+                 <li>
+
+                  <div class="view view-three">
+                    <img src="{% static 'img/pillars/success.png' %}"/>
+                    <div class="mask">
+						<h3>SUCCESS</h3>
+						<p class="fontsforweb_fontid_9785" style="font-size: 14px;">
+                            ...and then thou shalt have good success (Jos.1:8)
+                        </p>
+						<a class="button portfolio btn-icon" href="#"><i class="icon-link icon-large"></i></a>
+                    </div>
+                  </div>
+
+                </li>
+
+                 <li>
+
+                  <div class="view view-three">
+                    <img src="{% static 'img/pillars/vision.png' %}"/>
+                    <div class="mask">
+						<h3>VISION</h3>
+						<p class="fontsforweb_fontid_9785" style="font-size: 14px;">
+                            Write the vision; make it plain (Hab.2:2)
+                        </p>
+						<a class="button portfolio btn-icon" href="#"><i class="icon-link icon-large"></i></a>
+                    </div>
+                  </div>
+
+                </li>
+
+                <li>
+
+                  <div class="view view-three">
+                    <img src="{% static 'img/pillars/healing.png' %}"/>
+                    <div class="mask">
+						<h3>HEALING</h3>
+						<p class="fontsforweb_fontid_9785" style="font-size: 14px;">
+                            ...arise with healing in His wings (Mal. 4:2)
+                        </p>
+						<a class="button portfolio btn-icon" href="#"><i class="icon-link icon-large"></i></a>
+                    </div>
+                  </div>
+
+                </li>
+
+              </ul>
+
+            </div><!-- End Carousel -->
+    {% endblock content %}

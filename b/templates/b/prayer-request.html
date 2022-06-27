@@ -1,0 +1,136 @@
+{% extends 'base.html' %}
+
+
+{% load static %}
+{% block content %}
+<div class="row showcase">
+		<img src="{% static 'img/banners/prayer-requests.jpg' %}" />
+	</div>
+    <div class="row main-content"><!-- Main Content -->
+  <div class="large-12 columns">
+    <div class="row band3"><!-- Row -->
+      
+      <div class="large-7 columns"> 
+        <script language="javascript" type="text/javascript" src="{%  static 'js/validations.js' %}"></script>
+
+
+
+                <h3>Prayer Request Form</h3>
+        <form method="POST" action=""  >
+            {% csrf_token %}
+          <fieldset>
+            <legend>Please Fill this Form to Send us your Prayer Request!</legend>
+            <input type="hidden" name="check" value="1">
+            <div id="status"></div>
+            <div class="contact_form">
+              <div class="row">
+                <div class="small-4 columns">
+                  <input type="text" size="30" class="frm_txt_fld" value=""  placeholder="Your Full Name" name="myName"/>
+                  <label class="error_lbl" for="myName"></label>
+                  <br />
+                </div>
+                <div class="small-4 columns">
+                  <input type="text" size="30" class="frm_txt_fld" value=""  placeholder="Your Residential Address" name="myRes"/>
+                  <label class="error_lbl" for="myRes"></label>
+                  <br />
+                </div>
+                <div class="small-4 columns">
+                  <input type="text" size="30" class="frm_txt_fld" value=""   placeholder="Your Email" name="myEmail"/>
+                  <label class="error_lbl" for="myEmail"></label>
+                  <br />
+                </div>
+                <div class="small-4 columns">
+                  <input type="text" size="15" class="frm_txt_fld" value="" placeholder="Phone No (999-999-9999)"  name="phone"/>
+                  <label class="error_lbl" for="phone"></label>
+                  <br />
+                </div>
+                 <div class="small-4 columns">
+                  <input name="myFaith" type="text" class="frm_txt_fld" value="" placeholder="Do you worship in this Assembly?" size="30"/>
+                  <label for="myFaith" class="error_lbl"></label>
+                  <br /></div>
+                  
+                <div class="small-4 columns">
+                  <input name="myCity" type="text" class="frm_txt_fld" value="" placeholder="Your City" size="30"/>
+                  <label for="myCity" class="error_lbl"></label>
+                  <br />
+                </div>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <div class="small-12 columns"><b style="color:#FFF;">Will You Want a Call Back?</b> <font style="color:#FFF; padding-left:5%;">
+                  <input type="checkbox" name="myPart" value="yes"/>
+                  Yes  &nbsp;
+                  <input type="checkbox" name="myPart" value="no"/>
+                  No &nbsp;
+                 </div>
+                <br/>
+                <br/>
+            
+                <div class="small-12 columns"><b style="color:#FFF;">This prayer is for:</b> <font style="color:#FFF; padding-left:5%;">
+                  <input type="checkbox" name="status" value="Myself"  checked="checked"/>
+                  Me &nbsp; 
+               <input type="checkbox" name="status" value="Spouse"/>
+               Spouse &nbsp; 
+          <input type="checkbox" name="status" value="Child"/>
+              Child &nbsp; 
+          <input type="checkbox" name="status" value="Friend"/>
+               Friend  &nbsp; 
+          <input type="checkbox" name="status" value="Siblings"/>
+               Siblings
+                  </div>
+                <br/>
+                <div class="small-12 columns" style="padding-top:5%;">
+                  <textarea cols="7" rows="7" id="theMessage"  placeholder="Please Send us a Summary of your Prayer Request"name="theMessage"></textarea>
+                  <label for="theMessage" class="error_lbl"></label>
+                  <br />
+                </div>
+                <input type="hidden" name="userIP" value="197.210.70.223">
+                <div class="small-12 columns">
+                  <input type="submit" class="button success radius medium" value="Send Petition" name="send" id="send" />
+                </div>
+              </div>
+            </div>
+          </fieldset>
+        </form>
+      </div>
+      <div class="large-5 columns">
+        <h3 align="center">God Answers Prayers!!!</h3>
+         <p align="justify" class="fontsforweb_fontid_9785" style="font-size: 14px;">This is Winners Chapel International, Total Garden, Ibadan:
+             <br>The home of
+          <highlight> Signs &amp; Wonders.</highlight>
+          <br/><br/>
+        “The effectual fervent prayer of a righteous 
+man availeth much” (James 5:16).  <br/><br/>
+Prayer is that vital link that connects us with our heavenly Father.<br/>
+Biblical prayer conotes our crying to God because we have an assurance that He hears us.<br/>
+Prayer is an incredible privilege: it is able to move the hand of God in seemingly hopeless situations.<br/><br/>
+
+<b>In this Commission, We believe that:</b><br/>
+          God Answers prayers<br/>
+         God will honor every prayer offered in faith<br/>
+        
+          <b>Your long awaited turn-around and change of story has come!</b></p>
+        <div class="contact-details">
+           <p align="justify" class="fontsforweb_fontid_9785" style="font-size: 14px;"><span><i class="icon-home"></i></span>Address: UNIT 5, 321 REXDALE BLVD, TORONTO, ON M9W 1R8 </p>
+           <p align="justify" class="fontsforweb_fontid_9785" style="font-size: 14px;"><span><i class="icon-phone"></i></span>Phone: (416) 749-5191</p>
+           <p align="justify" class="fontsforweb_fontid_9785" style="font-size: 14px;"><span><i class="icon-envelope"></i></span>E-mail: prayers@winnerschapeltoronto.org</p>
+        </div>
+        <br />
+        <ul class="inline-list" style="padding-left:30px;">
+          <li><a class="smallipopBlue" href="#" title="Facebook"><i class="icon-facebook-sign icon-2x"></i></a></li>
+          <li><a class="smallipopBlue" href="#" title="Twitter"><i class="icon-twitter-sign icon-2x"></i></a></li>
+          <li><a class="smallipopBlue" href="#" title="Google+"><i class="icon-google-plus-sign icon-2x"></i></a></li>
+          <li><a class="smallipopBlue" href="#" title="Linkedin"><i class="icon-linkedin-sign icon-2x"></i></a></li>
+          <li><a class="smallipopBlue" href="#" title="Pinterest"><i class="icon-pinterest-sign icon-2x"></i></a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- End Main Content -->
+
+  </div>
+</div>
+  <!-- End Special Row --> 
+ {% endblock content %}

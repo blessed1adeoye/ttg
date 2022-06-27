@@ -1,0 +1,232 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Our Church  includes many pages like Bulletin, Programs, events, sermons, ministries, working church contact form etc..">
+<meta name="keywords" content="Church, Website, Template, Bulletin, Programs, Events, Premium, Charity, Non Profit ">
+<meta name="author" content="OMOBUWA BLESSED ADEOYE">
+<title>WINNER CHAPEL</title>
+
+<script src="{% static 'a/js/ade.js' %}"></script>
+    <link href="{% static 'a/css/bootstrap.min.css' %}" rel="stylesheet">
+
+<link href="{% static 'a/css/church.css' %}" rel="stylesheet">
+<link href="{% static 'a/css/fancybox.css' %}" rel="stylesheet">
+
+<!--[if lt IE 9]>
+  <script src="js/html5shiv.js"></script>
+  <script src="js/respond.min.js"></script>
+<![endif]-->
+
+<link rel="shortcut icon" href="{% static 'a/images/favicon.png' %}">
+
+<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700" rel='stylesheet' type='text/css'>
+</head>
+<body>
+
+<!--<div class="navbar navbar-default navbar-fixed-top" role="navigation">-->
+<!--    <div class="container">-->
+<!--        <div class="navbar-header">-->
+<!--            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>-->
+<!--            <div><a class="navbar-brand" href="index-2.html"> <img src="images/church-logo.png" alt="church logo" class="img-responsive"></a> </div>-->
+<!--            <div class="navbar-collapse collapse">-->
+<!--                <ul class="nav navbar-nav navbar-right">-->
+<!--                    <li class="dropdown active"><a href="#" class="dropdown-toggle" data-toggle="dropdown">HOME <span class="caret"></span></a>-->
+<!--                        <ul class="dropdown-menu dropdown-menu-left" role="menu">-->
+<!--                            <li><a href="index-2.html">Home Default</a></li>-->
+<!--                            <li><a href="index-slider-alt.html">Home Animated Slider</a></li>-->
+<!--                        </ul>-->
+<!--                    </li>-->
+<!--                    <li><a href="about.html">ABOUT</a></li>-->
+<!--                    <li class="dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown">MINISTRY <span class="caret"></span></a>-->
+<!--                        <ul class="dropdown-menu dropdown-menu-left" role="menu">-->
+<!--                            <li><a href="ministry.html">Childrens Ministry</a></li>-->
+<!--                            <li><a href="ministry.html">Students Ministry</a></li>-->
+<!--                            <li><a href="ministry.html">Groups</a></li>-->
+<!--                        </ul>-->
+<!--                    </li>-->
+<!--                    <li class="dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown">SERMONS <span class="caret"></span></a>-->
+<!--                        <ul class="dropdown-menu dropdown-menu-left" role="menu">-->
+<!--                            <li><a href="sermons.html">Christ-Occupied</a></li>-->
+<!--                            <li><a href="sermons.html">God's Love</a></li>-->
+<!--                            <li><a href="sermons.html">Faithfulness</a></li>-->
+<!--                            <li><a href="sermons.html">Praise Him</a></li>-->
+<!--                        </ul>-->
+<!--                    </li>-->
+<!--                    <li class="dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown">PAGES <span class="caret"></span></a>-->
+<!--                        <ul class="dropdown-menu dropdown-menu-left" role="menu">-->
+<!--                        <li><a href="image-gallery.html">Image Gallery</a></li>-->
+<!--                        <li><a href="video-gallery.html">Video Gallery</a></li>-->
+<!--                        <li><a href="blog.html">Blog list</a></li>-->
+<!--                        <li><a href="blog-single.html">Blog Single</a></li>-->
+<!--                        <li><a href="events-programs.html">Events &amp; Programs</a></li>-->
+<!--                        <li><a href="event-single.html">Event Single</a></li>-->
+<!--                        <li><a href="event-calendar.html">Event Calendar</a></li>-->
+<!--                        <li><a href="charity-donation.html">Charity &amp; Donations</a></li>-->
+<!--                        <li class="divider"></li>-->
+<!--                        <li class="dropdown-header">OTHER PAGES</li>-->
+<!--                        <li><a href="prayers.html">Prayers</a></li>-->
+<!--                        <li><a href="faq.html">FAQ</a></li>-->
+<!--                        <li><a href="shortcodes.html">Shortcodes</a></li>-->
+<!--                        <li><a href="full-width.html">Full Width</a></li>-->
+<!--                        <li><a href="left-sidebar.html">Left Sidebar</a></li>-->
+<!--&lt;!&ndash;                            <li><a href="https://bit.ly/BuyCatholic">Buy this Template</a></li>&ndash;&gt;-->
+<!--                        </ul>-->
+<!--                    </li>-->
+<!--                    -->
+<!--                    <li><a href="contact.html">TEST4</a></li>-->
+<!--                    <li><a href="contact.html">TEST5</a></li>-->
+<!--                    <li><a href="contact.html">TEST6</a></li>-->
+<!--                    <li><a href="contact.html">TEST7</a></li>-->
+<!--                </ul>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--    </div>-->
+<!--</div>-->
+
+
+<div class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+            <a class="navbar-brand" href="index-2.html"> <img src="{% static 'a/images/church-logo.png' %}" alt="church logo" class="img-responsive"></a>
+        </div>
+        <div class="navbar-collapse collapse">
+            <ul class="nav navbar-nav navbar-right">
+                <li class="dropdown active"><a href="#" class="dropdown-toggle" data-toggle="dropdown">HOME <span class="caret"></span></a>
+                    <ul class="dropdown-menu dropdown-menu-left" role="menu">
+                        <li><a href="index-2.html">Home Default</a></li>
+                        <li><a href="index-slider-alt.html">Home Animated Slider</a></li>
+                    </ul>
+                </li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li class="dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown">MINISTRY <span class="caret"></span></a>
+                    <ul class="dropdown-menu dropdown-menu-left" role="menu">
+                        <li><a href="ministry.html">Childrens Ministry</a></li>
+                        <li><a href="ministry.html">Students Ministry</a></li>
+                        <li><a href="ministry.html">Groups</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown">SERMONS <span class="caret"></span></a>
+                    <ul class="dropdown-menu dropdown-menu-left" role="menu">
+                        <li><a href="sermons.html">Christ-Occupied</a></li>
+                        <li><a href="sermons.html">God's Love</a></li>
+                        <li><a href="sermons.html">Faithfulness</a></li>
+                        <li><a href="sermons.html">Praise Him</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown">PAGES <span class="caret"></span></a>
+                    <ul class="dropdown-menu dropdown-menu-left" role="menu">
+                        <li><a href="image-gallery.html">Image Gallery</a></li>
+                        <li><a href="video-gallery.html">Video Gallery</a></li>
+                        <li><a href="blog.html">Blog list</a></li>
+                        <li><a href="blog-single.html">Blog Single</a></li>
+                        <li><a href="events-programs.html">Events &amp; Programs</a></li>
+                        <li><a href="event-single.html">Event Single</a></li>
+                        <li><a href="event-calendar.html">Event Calendar</a></li>
+                        <li><a href="charity-donation.html">Charity &amp; Donations</a></li>
+                        <li class="divider"></li>
+                        <li class="dropdown-header">OTHER PAGES</li>
+                        <li><a href="prayers.html">Prayers</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
+                        <li><a href="shortcodes.html">Shortcodes</a></li>
+                        <li><a href="full-width.html">Full Width</a></li>
+                        <li><a href="left-sidebar.html">Left Sidebar</a></li>
+                    </ul>
+                </li>
+                <li><a href="contact.html">CONTACT</a></li>
+                <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">TEST1 <span class="caret"></span></a>
+                    <ul class="dropdown-menu dropdown-menu-left" role="menu">
+                        <li class="dropdown-header">OTHER PAGES</li>
+                        <li><a href="prayers.html">Prayers</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
+                        <li><a href="shortcodes.html">Shortcodes</a></li>
+                        <li><a href="full-width.html">Full Width</a></li>
+                        <li><a href="prayers.html">Prayers</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
+                        <li><a href="shortcodes.html">Shortcodes</a></li>
+                        <li><a href="full-width.html">Full Width</a></li>
+                    </ul>
+
+                </li>
+                <li><a href="contact.html">TEST2</a></li>
+                <li><a href="contact.html">TEST3</a></li>
+                <li><a href="contact.html">TEST4</a></li>
+                <li><a href="contact.html">TEST5</a></li>
+                <li><a href="contact.html">TEST6</a></li>
+
+            </ul>
+        </div>
+    </div>
+</div>
+
+
+
+{% block content %}
+
+
+
+{% endblock content %}
+
+
+
+
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-6 col-md-3">
+                <h5>ABOUT THE CHURCH</h5>
+                <p>For the word of God is living and active. Sharper than any double-edged sword, it penetrates even to dividing soul and spirit, joints and marrow; it judges the thoughts and attitudes.</p>
+            </div>
+            <div class="col-sm-6 col-md-3">
+                <h5>QUICK LINKS</h5>
+                <ul class="footer-links">
+                    <li><a href="#">Upcoming events</a></li>
+                    <li><a href="#">Ministries</a></li>
+                    <li><a href="#">Recent Sermons</a></li>
+                    <li><a href="#">Contact us</a></li>
+                </ul>
+            </div>
+            <div class="col-sm-6 col-md-3">
+                <h5>OUR ADDRESS</h5>
+                <p> Winners Chapel<br>
+                121 King Street, Melbourne <br>
+                Victoria 3000 Australia<br>
+                <br>
+                Phone: +61 3 8376 6284<br>
+                Email: <a href="#"><span class="__cf_email__" data-cfemail="412c20282d01222035292e2d2822362423322835246f222e2c">[email&#160;protected]</span></a></p>
+            </div>
+            <div class="col-sm-6 col-md-3">
+                <h5>CONNECT</h5>
+                <div class="social-icons"><a href="#"><img src="images/fb-icon.png" alt="social"></a> <a href="#"><img src="images/tw-icon.png" alt="social"></a> <a href="#"><img src="images/in-icon.png" alt="social"></a></div>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <div class="container">
+            <p class="text-center">&copy; 2011 - <script>document.write(new Date().getFullYear());</script> &amp; Beyond - Winners Chapel, Total Garden Ibadan, Nigeria.  All Rights Reserved.</p>
+        </div>
+    </div>
+</footer>
+
+
+
+
+
+<script src="{% static 'a/js/jquery.js' %}"></script>
+<script src="{% static 'a/js/bootstrap.min.js' %}"></script>
+<script src="{% static 'a/js/owl.carousel.min.js' %}"></script>
+<script src="{% static 'a/js/ketchup.all.js' %}"></script>
+<script src="{% static 'a/js/fancybox.js' %}"></script>
+<script src="{% static 'a/js/script.js' %}"></script>
+</body>
+
+
+</html>

@@ -1,0 +1,69 @@
+{% extends 'base.html' %}
+
+
+{% load static %}
+{% block content %}
+
+<div class="row main-content">
+<!-- Main Content -->
+<div class="large-12 columns">
+ <div class="row">
+  <!-- Row -->
+  <div class="large-8 columns" style="background-color: black;"> <br/>
+    <article class="post">
+      <div class="post_img">
+        <div class="orbit-container"> 
+          <!-- Orbit Container --> 
+          <img src="./static/img/4.jpg"> </div>
+        <!-- End Orbit Container --> 
+      </div>
+
+    {% for x in desk %}
+      <h3 align="center" style="font-weight:bolder;"><b style="color:#006;">{{ x.topic }}<br/> {{ x.name }}</b> </h3>
+      <h3 align="center" style="font-weight:bolder;font-weight:bolder; color:#000; padding: 0 35px;">  <b style="color:#f00;">Week of {{ x.week }}</b></h3>
+      <br/>
+                <blockquote><span> <em style="color: #f00; font-family: times new roman;font-size: 14px; padding-left:30px; class="fontsforweb_fontid_9785"> "{{ x.scripture }}. . ." <b>{{ x.scripture_reference }}</b>  </em>  - <b>{{ x.bible_version }}</b></blockquote> <br/>
+        <br/>
+      <p align="justify" class="fontsforweb_fontid_9785" style="font-size: 14px; padding-left:30px;">{{ x.message|safe }}
+      <!--  <strong>...and Let the Redeemed of the Lord say So!...</strong> <br />-->
+      </p>
+     <center>
+              center
+
+     </center>
+    {% endfor %}
+
+      <p align="justify" class="fontsforweb_fontid_9785" style="  font-size: 16px; padding: 0 40px;"> 
+      
+      <table width="100%" border="0">
+        <tbody style="border: 0px #fff;">
+          <tr>
+            <td><img src="{% static 'img/p-desk-subscribe-button.png' %}" alt ="subscribe to our newsletter"/></td>
+            <td valign="top" style="font-family:gothic; font-size:13px;"><h4 style="color:#820507; font-weight:bolder;">Do you want to receive the latest posts and exclusive updates from the Pastor's Desk?</h4>
+              Subscribe to the Winners' Chapel Total Garden Ibadan Throne Room Updates Now!  &nbsp; <b>Click <a href="#">here</a> to Subscribe</b></td>
+          </tr>
+        </tbody>
+      </table>
+      </p>
+    </article>
+  </div>
+    <br/>
+  <div class="large-4 columns">
+    <div class="clearfix"></div>
+    <!-- End Panel --> 
+    
+  
+  {% block unit %} {% include 'b/unit.html' %}  {% endblock unit %}
+    
+  </div>
+</div>
+
+
+ <br>
+
+<br clear="all">
+<br>
+  <!-- End Special Row --> 
+<meta name="viewport" content="width=device-width" />
+<title>Weekly Updates From the Pastor's Desk | Pastor Moses Olajide - Resident Pastor, Winners Chapel International, Total Garden Ibadan | winnerschapeltotalgarden.org</title>
+    {% endblock content %}
